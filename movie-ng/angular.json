@@ -88,9 +88,11 @@
               "src/assets"
             ],
             "styles": [
-              "src/css/style.css"
+              "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+    "src/assets/js/jquery-2.2.3.min.js",
+  ]
           }
         },
         "lint": {

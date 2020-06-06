@@ -5,7 +5,8 @@
         <div class="w3ls-reg">
             <!-- input fields -->
           <app-input-form></app-input-form>
-
+            <!-- //input fields -->
+            <!-- seat availabilty list -->
             <ul class="seat_w3ls">
                 <li class="smallBox greenBox">Selected Seat</li>
 
@@ -13,9 +14,11 @@
 
                 <li class="smallBox emptyBox">Empty Seat</li>
             </ul>
-
+            <!-- seat availabilty list -->
+            <!-- seat layout -->
             <app-seat-structure></app-seat-structure>
-
+            <!-- //seat layout -->
+            <!-- details after booking displayed here -->
             <div class="displayerBoxes txt-center" style="overflow-x:auto;">
                 <table class="Displaytable w3ls-table" width="100%">
                     <tr>
@@ -40,9 +43,10 @@
         </div>
     </div>
 
-
-    <script src="src/app/js/jquery-2.2.3.min.js"></script>
-
+    <!-- js -->
+    <script src="assets/js/jquery-2.2.3.min.js"></script>
+    <!-- //js -->
+    <!-- script for seat selection -->
     <script>
         function onLoaderFunc() {
             $(".seatStructure *").prop("disabled", true);
@@ -91,7 +95,7 @@
             alert($("input:checked").length);
         }
 
-
+        /*
         function getCookie(cname) {
             var name = cname + "=";
             var ca = document.cookie.split(';');
@@ -106,7 +110,7 @@
             }
             return "";
         }
-
+        */
 
 
         $(":checkbox").click(function () {
@@ -118,4 +122,4 @@
             }
         });
     </script>
-  
+    <!-- //script for seat selection -->
